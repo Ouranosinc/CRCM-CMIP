@@ -7,7 +7,7 @@ Canadian Regional Climate Model – version 5.
 Based on GEM 3.3.3.1
 
 #### Configuration
-NAM-11 695x668 grid points including a 20-point sponge (and halo) zone surrounding the domain, 5-minute time steps, 
+NAM-11 CORDEX North American domain at 0.11° 695x668 grid points including a 20-point sponge (and halo) zone surrounding the domain, 5-minute time steps, 
 xlat1=28.525 xlon2=145.955. 56 vertical levels and a top at 10 hPa. 17 surface levels and a bottom at 15 m.
 
 #### Spectral Nudging
