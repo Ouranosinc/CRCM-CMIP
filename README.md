@@ -1,8 +1,7 @@
 # CRCM-CMIP
 [![DOI](https://zenodo.org/badge/790831449.svg)](https://zenodo.org/doi/10.5281/zenodo.11061924)
 
-[Ouranos](https://www.ouranos.ca/en)
-Canadian Regional Climate Model – version 5.
+[Ouranos](https://www.ouranos.ca/en) : Canadian Regional Climate Model – version 5
 
 **Martynov et al. 2013, Separovic et al. 2013**
 
@@ -34,6 +33,16 @@ Prescribed SST & sea ice fraction
 
 #### Aerosols
 Prescribed
+
+### Data Access
+Due to its large size, the full dataset can't yet be shared publicly.
+
+A subset of the variables are stored on Ouranos' THREDDS server.
+
+- Annual files : https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/birdhouse/disk2/ouranos/CORDEX/catalog.html
+- Aggregated datasets : https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/RCM-CMIP6/catalog.html
+
+Other variables can be provided upon request by writing to simulations_ouranos@ouranos.ca.
 
 ### Acknowlegments
 Developed by the [ESCER Centre](https://escer.uqam.ca/) at UQAM (Université du Québec à Montréal) with the collaboration
