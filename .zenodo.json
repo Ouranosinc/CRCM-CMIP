@@ -8,7 +8,7 @@
     },
     {
       "name": "Giguère, Michel",
-      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada"
     },
     {
       "name": "McCray, Christopher",
@@ -29,7 +29,7 @@
       "name": "Matte, Dominic",
       "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
       "orcid": "0000-0002-9670-9318"
-    }
+    },
     {
       "name": "Labonté, Marie-Pier",
       "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
@@ -45,8 +45,7 @@
     "climate",
     "Regional climate",
     "Regional climate model",
-    "CORDEX",
-
+    "CORDEX"
   ],
   "related_identifiers": [
     {
