@@ -1,0 +1,97 @@
+{
+  "title": "CRCM5-CMIP6 : A dynamically-downscaled ensemble of CMIP6 simulations.",
+  "creators": [
+    {
+      "name": "Paquin, Dominique",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+      "orcid": "0000-0002-1353-930X"
+    },
+    {
+      "name": "Giguère, Michel",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+    },
+    {
+      "name": "McCray, Christopher",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+      "orcid": "0000-0001-5594-9115"
+    },
+    {
+      "name": "Asselin, Olivier",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+      "orcid": "0000-0003-3621-2737"
+    },
+    {
+      "name": "Gauthier, Charles",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+      "orcid": "0000-0003-1580-3335"
+    },
+    {
+      "name": "Matte, Dominic",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+      "orcid": "0000-0002-9670-9318"
+    }
+    {
+      "name": "Labonté, Marie-Pier",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+      "orcid": "0000-0003-0738-3940"
+    },
+    {
+      "name": "Bourgault, Pascal",
+      "affiliation": "Ouranos Consortium, Montréal, Québec, Canada",
+      "orcid": "0000-0003-1192-0403"
+    }
+  ],
+  "keywords": [
+    "climate",
+    "Regional climate",
+    "Regional climate model",
+    "CORDEX",
+
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1007/s00382-013-1778-9",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "10.1007/s00382-013-1737-5",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "10.22033/ESGF/CMIP6.1317",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.22033/ESGF/CMIP6.15349",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.22033/ESGF/CMIP6.1395",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.22033/ESGF/CMIP6.608",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.24381/cds.143582cf",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "communities": [
+    {
+      "identifier": "ouranos"
+    }
+  ],
+  "upload_type": "dataset",
+  "access_right": "open"
+}
