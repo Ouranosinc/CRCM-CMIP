@@ -1,6 +1,11 @@
 # CRCM-CMIP
 [![DOI](https://zenodo.org/badge/790831449.svg)](https://zenodo.org/doi/10.5281/zenodo.11061924)
 
+
+### Data reference
+Paquin, D., C. McCray, C. B. Gauthier, M. Giguère, O. Asselin, P .Bour-gault, M.-P. Labonté and D. Matte. The CRCM5-CMIP6 Ouranos’ ensemble : A dynamically-downscaled ensemble of CMIP6 simulations over North America. to be submitted to Scientific Data
+
+
 [Ouranos](https://www.ouranos.ca/en) : Canadian Regional Climate Model – version 5
 
 **Martynov et al. 2013, Separovic et al. 2013**
