@@ -203,14 +203,17 @@ def affiche_cycle_annuel(ds_ref,
         if len(colors) > 1:
             if colors[0] == colors[1]:
                 c = '0.3'
-        
-        if 'experiment_id' in ds_reg.attrs:
-            #source_label = ds_reg.attrs['experiment_id']
-            source_label = ds_reg.attrs['experiment_id']
-        else:
-            source_label = ds_reg.attrs['cat:source']
+        if ref_source == 'source':
+            label_text = nom_source
+        elif ref_source == 'ref':
+            label_text = nom_ref
+        # if 'experiment_id' in ds_reg.attrs:
+        #     #source_label = ds_reg.attrs['experiment_id']
+        #     source_label = ds_reg.attrs['experiment_id']            
+        # else:
+        #     source_label = ds_reg.attrs['cat:source']
         period = ds_reg[f"{nom_var}_moy_mens"].period
-        leg_lab = f"{source_label} {period}"
+        leg_lab = f"{label_text} {period}"
         
         if nom_var.startswith('tas'):
             tas_moy = ds_reg.tas_moy_mens.values-273.15
@@ -552,10 +555,10 @@ def boxplots_saisons(nom_var,
     cmap = mplc.ListedColormap(['None','purple'])
     cb = ax2.pcolormesh(plot_data.lon, plot_data.lat, plot_data*1,vmin=0.5,vmax=1.1,
                   zorder=5, transform=ccrs.PlateCarree(), cmap=cmap)
-    if 'CRCM5' in ds.attrs['cat:source']:
-        sim_title = f"CRCM5[{ds.attrs['driving_model_id'].strip()}]"
-    else:
-        sim_title = f"{ds.attrs['cat:source']}[{ds.attrs['cat:driving_model']}]"
+    # if 'CRCM5' in ds.attrs['cat:source']:
+    #     sim_title = f"CRCM5[{ds.attrs['driving_model_id'].strip()}]"
+    #else:
+    sim_title = f"{ds.attrs['cat:source']}[{ds.attrs['cat:driving_model']}]"
     plt.suptitle(f"{nom_long_var}\n{sim_title}\nRegion: {region_name}",y=1.02, fontsize=14)
     #plt.tight_layout()
     plt.subplots_adjust(hspace=0.3, wspace=0.1) 
@@ -692,7 +695,7 @@ def get_past_fut_mrcc5_pilote(pilote,
     if mrcc5_ou_pilote == 'mrcc5':
         #source = 'OURANOS-CRCM5'        
         past_id = pcat.search(driving_model=f".*{pilote}.*", 
-                              member = member,
+                              driving_member = member,
                                     processing_level = processing_level,
                                     date_start=date_start,
                                     date_end = date_end)    
@@ -740,12 +743,12 @@ def get_past_fut_mrcc5_pilote(pilote,
                 if pcat.search(id = id_fut, 
                                 driving_model = pilote, 
                                experiment = ssp,
-                               member = member,
+                               driving_member = member,
                                processing_level = processing_level):
                     print(f'--SIMULATION {ssp} - TROUVÉE---')
                     ds_sim_fut =pcat.search(id = id_fut, 
                                             driving_model = pilote, 
-                                            member = member,
+                                            driving_member = member,
                                             experiment = ssp,
                                              processing_level = processing_level).to_dask().load()
                     if region is not None:
