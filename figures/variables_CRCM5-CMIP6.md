@@ -1,6 +1,11 @@
 
-Comprehensive list of output variables. Variable types include instantaneous (I) values at the archival time step, means between archival times (M), and miNimum (N) or maXimum (X) values between archival times. The status column shows the availability of the variables via THREDDS: available at time of writing (T), available later (L), or not available (blank). 
-When a variable is shared on THREDDS at a coarser frequency than what was originally saved, the THREDDS frequency is indicated in parenthesis.
+#### Comprehensive list of output variables
+ 
+Variable types include instantaneous (I) values at the archival time step, means between archival times (M), and miNimum (N) or maXimum (X) values between archival times. For variable types M, N and X, the values of the time dimension correspond to the center of the time interval over which the minimum, maximum or average is calculated. For instance, the precipitation flux (pr) is given at times 0:30, 1:30, 2:30, etc., which correspond to the average precipitation flux over the time intervals 0:00-1:00, 1:00-2:00, 2:00-3:00, etc., respectively. The latter interval bounds are provided via the variable “time_bnds” present in the time series of variables of type M, N or X. Daily and monthly means are calculated from hourly and 3-hourly output. For some variables, only monthly means are archived. 
+ 
+For 3D atmospheric variables, data is provided on 11 pressure levels : 1000, 975, 950, 925, 900, 850, 800, 700, 600, 500 and 250 hPa. For 3D soil variables, data is provided at the 17 soil levels down to a depth of 15 m. However, variables related to soil moisture should be used with caution below a depth of 2 m, because deep-soil moisture cannot be considered to be in equilibrium in this ensemble. 
+ 
+The status column shows the availability of the variables via THREDDS: available at time of writing (T), available later (L), or not available (blank). When a variable is shared on THREDDS at a coarser frequency than what was originally saved, the THREDDS frequency is indicated in parenthesis.
 
 |Variable    |Description                                                |Frequency  |Realm   |Type|Status|
 |------------|-----------------------------------------------------------|-----------|--------|----|------|
