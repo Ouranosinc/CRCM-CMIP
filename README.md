@@ -3,7 +3,7 @@
 
 
 ### Data reference
-Paquin, D., C. McCray, C. B. Gauthier, M. Giguère, O. Asselin, P .Bourgault, M.-P. Labonté and D. Matte. The CRCM5-CMIP6 Ouranos’ ensemble : A dynamically-downscaled ensemble of CMIP6 simulations over North America. Accepted in Scientific Data
+Paquin, D., C. McCray, C. B. Gauthier, M. Giguère, O. Asselin, P .Bourgault, M.-P. Labonté and D. Matte. The CRCM5-CMIP6 Ouranos’ ensemble : A dynamically-downscaled ensemble of CMIP6 simulations over North America. Accepted in Scientific Data.
 
 
 [Ouranos](https://www.ouranos.ca/en) : Canadian Regional Climate Model – version 5
