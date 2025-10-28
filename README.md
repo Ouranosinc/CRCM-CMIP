@@ -49,7 +49,7 @@ A subset of the variables are stored on Ouranos' THREDDS server.
 
 Other variables can be provided upon request by writing to simulations_ouranos@ouranos.ca.
 
-All data are available through a [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) licence.
+All data are available through a [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
 
 ### Acknowlegments
 Developed by the [ESCER Centre](https://escer.uqam.ca/) at UQAM (Université du Québec à Montréal) with the collaboration
