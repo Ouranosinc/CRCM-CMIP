@@ -11,7 +11,6 @@ The status column shows the availability of the variables via THREDDS: available
 |----------------|-----------------------------------------------------------|-----------|--------|----|------|
 |areacella       |Atmosphere Grid-Cell Area                                  |None       |Atmo 1D |IF  |      |
 |baresoilFrac    |Bare Soil Fraction                                         |3-hr       |Land 2D |I   |      |
-|bedrock         |Bedrock Depth                                              |None       |Land 1D |IF  |      |
 |cape            |Convective Available Potential Energy                      |3-hr       |Atmo 2D |I   |L     |
 |classFrac       |Land Area Fraction for Canadian Land Surface Scheme        |None       |Land 1D |IF  |      |
 |clayfrac        |Clay Fraction                                              |None       |Land 2D |IF  |      |
@@ -23,6 +22,7 @@ The status column shows the availability of the variables via THREDDS: available
 |dedt            |Tendency of Integrated Cloud Water and Ice                 |monthly    |Atmo 2D |M   |      |
 |dfq             |Horizontal Divergence of Water Vapor Flux                  |monthly    |Atmo 2D |M   |      |
 |drdt            |Tendency of Integrated Water Vapor                         |monthly    |Atmo 2D |M   |      |
+|dtb             |Bedrock Depth                                              |None       |Land 1D |IF  |      |
 |ebq             |Residual Term of Atmosphere Water Budget                   |monthly    |Atmo 2D |M   |      |
 |evspsbl         |Evaporation                                                |1-hr       |Atmo 2D |M   |T     |
 |evspsblland     |Water Evaporation from Land                                |3-hr       |Land 2D |M   |      |
@@ -36,7 +36,6 @@ The status column shows the availability of the variables via THREDDS: available
 |hus             |Specific Humidity                                          |3-hr (6-hr)|Atmo 3D |I   |L     |
 |huss            |Near-Surface Specific Humidity                             |1-hr       |Atmo 2D |I   |T     |
 |ksat            |Soil Hydraulic Conductivity at Saturation                  |None       |Land 2D |IF  |      |
-|lakeFrac        |Lake Area Fraction                                         |None       |Lake 1D |IF  |      |
 |ldpth           |Lake Depth                                                 |None       |Lake 1D |IF  |      |
 |lflrt           |Lake Floor Temperature                                     |3-hr       |Lake 2D |I   |      |
 |lif             |Lake Ice Fraction                                          |3-hr       |Lake 2D |I   |      |
@@ -51,7 +50,7 @@ The status column shows the availability of the variables via THREDDS: available
 |mrso            |Total Soil Moisture Content                                |3-hr       |Land 2D |I   |      |
 |mrsofc          |Soil Moisture Content at Field Capacity                    |None       |Land 1D |IF  |      |
 |mrsos           |Moisture in Upper Portion of Soil Column                   |3-hr       |Land 2D |I   |L     |
-|orogf           |Filtred Orography                                          |None       |Atmo 1D |IF  |      |
+|orog            |Filtred Orography                                          |None       |Atmo 1D |IF  |      |
 |porosity        |Soil Porosity                                              |None       |Land 2D |IF  |      |
 |pr              |Precipitation Flux                                         |1-hr, daily|Atmo 2D |M   |T     |
 |prc             |Convective Precipitation                                   |1-hr       |Atmo 2D |M   |L     |
@@ -79,7 +78,8 @@ The status column shows the availability of the variables via THREDDS: available
 |rsut            |TOA Outgoing Shortwave Radiation                           |1-hr       |Atmo 2D |M   |L     |
 |sandfrac        |Sand Fraction                                              |None       |Land 2D |IF  |      |
 |sfcWindmax      |Daily Maximum Near-Surface Wind Speed                      |daily      |Atmo 2D |X   |L     |
-|sftgrf          |Grounded Ice Sheet Area Fraction                           |None       |Land 1D |IF  |      |
+|sftgif          |Grounded Ice Sheet Area Fraction                           |None       |Land 1D |IF  |      |
+|sftlaf          |Lake Area Fraction                                         |None       |Lake 1D |IF  |      |
 |sftlf           |Land Area Fraction                                         |None       |Land 1D |IF  |      |
 |sftof           |See Area Fraction                                          |None       |Ocean 1D|IF  |      |
 |sic             |Sea Ice Area Fraction                                      |3-hr       |Ocean 2D|I   |      |
