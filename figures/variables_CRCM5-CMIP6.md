@@ -20,6 +20,7 @@ The status column shows the availability of the variables via THREDDS: available
 |ct              |Air Pressure at Cloud Top                                  |3-hr       |Atmo 2D |I   |      |
 |dds             |Near-Surface Dewpoint Depression                           |3-hr       |Atmo 2D |I   |      |
 |dedt            |Tendency of Integrated Cloud Water and Ice                 |monthly    |Atmo 2D |M   |      |
+|depthl          |Lake Depth                                                 |None       |Lake 1D |IF  |      |
 |dfq             |Horizontal Divergence of Water Vapor Flux                  |monthly    |Atmo 2D |M   |      |
 |drdt            |Tendency of Integrated Water Vapor                         |monthly    |Atmo 2D |M   |      |
 |dtb             |Bedrock Depth                                              |None       |Land 1D |IF  |      |
@@ -36,7 +37,6 @@ The status column shows the availability of the variables via THREDDS: available
 |hus             |Specific Humidity                                          |3-hr (6-hr)|Atmo 3D |I   |L     |
 |huss            |Near-Surface Specific Humidity                             |1-hr       |Atmo 2D |I   |T     |
 |ksat            |Soil Hydraulic Conductivity at Saturation                  |None       |Land 2D |IF  |      |
-|ldpth           |Lake Depth                                                 |None       |Lake 1D |IF  |      |
 |lflrt           |Lake Floor Temperature                                     |3-hr       |Lake 2D |I   |      |
 |lif             |Lake Ice Fraction                                          |3-hr       |Lake 2D |I   |      |
 |lit             |Lake Ice Thickness                                         |3-hr       |Lake 2D |I   |      |
@@ -82,6 +82,7 @@ The status column shows the availability of the variables via THREDDS: available
 |sftlaf          |Lake Area Fraction                                         |None       |Lake 1D |IF  |      |
 |sftlf           |Land Area Fraction                                         |None       |Land 1D |IF  |      |
 |sftof           |See Area Fraction                                          |None       |Ocean 1D|IF  |      |
+|sfturf          |Urban Area Fraction                                        |None       |Land 1D |IF  |      |
 |sic             |Sea Ice Area Fraction                                      |3-hr       |Ocean 2D|I   |      |
 |sit             |Sea Ice Thickness                                          |3-hr       |Ocean 2D|I   |      |
 |snc             |Snow Area Fraction                                         |3-hr       |Land 2D |I   |      |
@@ -104,7 +105,6 @@ The status column shows the availability of the variables via THREDDS: available
 |ua              |Eastward Wind                                              |3-hr (6-hr)|Atmo 3D |I   |L     |
 |uas             |Eastward Near-Surface Wind                                 |1-hr       |Atmo 2D |I   |T     |
 |uqvc            |Vertically Integrated East. Comp. of Specific Humidity Flux|3-hr       |Atmo 2D |M   |      |
-|urbanFrac       |Urban Area Fraction                                        |None       |Land 1D |IF  |      |
 |uvmax           |Maximum Near-Surface Wind Speed                            |3-hr       |Atmo 2D |X   |      |
 |va              |Northward Wind                                             |3-hr (6-hr)|Atmo 3D |I   |L     |
 |vas             |Northward Near-Surface Wind                                |1-hr       |Atmo 2D |I   |T     |
