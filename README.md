@@ -1,57 +1,65 @@
 # CRCM-CMIP
 [![DOI](https://zenodo.org/badge/790831449.svg)](https://zenodo.org/doi/10.5281/zenodo.11061924)
 
+[!CAUTION]
+Please consider citing the _Scientific Data_ article describing the dataset and/or the ESGF datasets from CEDA's citation service instead of this record.
 
-### Data reference
-Paquin, D., C. McCray, C. B. Gauthier, M. Giguère, O. Asselin, P .Bourgault, M.-P. Labonté and D. Matte. The CRCM5-CMIP6 Ouranos’ ensemble : A dynamically-downscaled ensemble of CMIP6 simulations over North America. Accepted in Scientific Data.
+## Data references
+- The _Scientific Data_ article describing the model and the ensemble : Paquin, D., C. McCray, C. B. Gauthier, M. Giguère, O. Asselin, P .Bourgault, M.-P. Labonté and D. Matte. The Ouranos CRCM5-CMIP6 ensemble: A dynamically downscaled ensemble of CMIP6 simulations over North America. Sci Data 12, 1984 (2025). https://doi.org/10.1038/s41597-025-06289-7
+- The ESFG Datasets, one for each driving experiment:
+	+ Paquin, D. (2026a). CORDEX-CMIP6.DD.NAM-12.OURANOS.evaluation.CRCM5-SN. Science and Technology Facilities Council. https://doi.org/10.82965/baj8-9930
+    + Paquin, D. (2026b). CORDEX-CMIP6.DD.NAM-12.OURANOS.historical.CRCM5-SN. Science and Technology Facilities Council. https://doi.org/10.82965/12gt-qv57
+    + Paquin, D. (2026c). CORDEX-CMIP6.DD.NAM-12.OURANOS.ssp126.CRCM5-SN. Science and Technology Facilities Council. https://doi.org/10.82965/rksp-xc07
+    + Paquin, D. (2026d). CORDEX-CMIP6.DD.NAM-12.OURANOS.ssp245.CRCM5-SN. Science and Technology Facilities Council. https://doi.org/10.82965/5csc-p892
+    + Paquin, D. (2026e). CORDEX-CMIP6.DD.NAM-12.OURANOS.ssp370.CRCM5-SN. Science and Technology Facilities Council. https://doi.org/10.82965/wtvp-9417
+    + Paquin, D. (2026f). CORDEX-CMIP6.DD.NAM-12.OURANOS.ssp585.CRCM5-SN. Science and Technology Facilities Council. https://doi.org/10.82965/yygy-9989
 
-
+## Model documentation
 [Ouranos](https://www.ouranos.ca/en) : Canadian Regional Climate Model – version 5
 
-**Martynov et al. 2013, Separovic et al. 2013**
+Principal model references : **Martynov et al. 2013, Separovic et al. 2013**
 
-Based on GEM 3.3.3.1
+The CRCM5-SN is developed by the ESCER Centre at UQAM (Université du Québec à Montréal) with the collaboration of Environment and Climate Change Canada (ECCC), based on GEM 3.3.3.1 from ECCC.
 
-#### Configuration
-NAM-11 CORDEX North American domain at 0.11° 695x668 grid points including a 20-point sponge (and halo) zone surrounding the domain, 5-minute time steps, 
-xlat1=28.525 xlon2=145.955. 56 vertical levels and a top at 10 hPa. 17 surface levels and a bottom at 15 m.
+### Grid configuration
+NAM-12 CORDEX North American domain at 0.11°, 695x668 grid points including a 20-point sponge (and halo) zone surrounding the domain, 5-minute time steps, 56 vertical levels and a top at 10 hPa. 17 soil levels and a bottom at 15 m.
 
-#### Spectral Nudging
-A spectral nudging is applied to the horizontal wind component with a half-response wavelength of 1177km and a 
-relaxation time of 13.34 h. The nudging strength is set to zero from the surface to a height of 500 hPa and increases 
-linearly onward to the top of the model’s simulated atmosphere (10 hPa)
+### Spectral Nudging
+A spectral nudging is applied to the horizontal wind component with a half-response wavelength of 1177km and a relaxation time of 13.34 h. The nudging strength is set to zero from the surface to a height of 500 hPa and increases linearly onward to the top of the model’s simulated atmosphere.
 
 ### Parameterization
 #### Atmosphere
-Precipitation: modified Sundqvist  (1998); precipitation partition Bourgouin  (2000) ; Implicit vertical diffusion. 
-Shallow convection: Kuo (1965) transient shallow, Non‐cloudy boundary layer formulation. 
-Deep convection: Kain-Fritsch (1990); 
+Precipitation: large-scale condensation scheme (Sundqvist, 1989); precipitation partition diagnostic method (Bourgouin, 2000)
+Shallow convection: based on transient version of Kuo (1965) scheme (Bélair et al. 2005)
+Deep convection: Kain-Fritsch (1990)
 Radiation: Li & Barker (2005)
 
 #### Surface
 CLASS3.5c (Verseghy, 1993)
 
-Lake model: FLake
+Lake model: FLake (Martinov et al. 2012)
 
 #### Ocean
 Prescribed SST & sea ice fraction
 
 #### Aerosols
-Prescribed
+Fixed
 
-### Data Access
-Due to its large size, the full dataset can't yet be shared publicly.
+## Data Access
+- **ESGF**: Most variables are published through the ESGF. Look for `institution='OURANOS'` in project "CORDEX-CMIP6" on any official MetaGrid interface or STAC catalog of the ESGF.
+- **THREDDS**
+	+ The data is browsable on Ouranos' ESGF data node as a THREDDS server at https://esgf.ouranos.ca/thredds/catalog/mrcc5-cmip6/catalog.html 
+    + NcML Aggregations are also made available at https://esgf.ouranos.ca/thredds/catalog/aggregations/catalog.html
+    + This THREDDS server exposes some variables that are not available through the ESGF as they are not compliant with CORDEX's data request :
+    	* `prfr` : Freezing rain flux
+    	* `prra` : Rainfall flux
+    	* `hursmin` : Daily minimum of relative humidity
+    	* Many `fx` fields describing the geophysical invariants
+- **Other** : Other variables and frequencies can be provided upon request by writing to simulations_ouranos@ouranos.ca. Some variables published on the data node are at a coarser frequency than initially simulated.
 
-A subset of the variables are stored on Ouranos' THREDDS server.
+All data are available through a [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license, see references above.
 
-- Annual files : https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/birdhouse/disk2/ouranos/CORDEX/catalog.html
-- Aggregated datasets : https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/RCM-CMIP6/catalog.html
-
-Other variables can be provided upon request by writing to simulations_ouranos@ouranos.ca.
-
-All data are available through a [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
-
-### Acknowlegments
+## Acknowlegments
 Developed by the [ESCER Centre](https://escer.uqam.ca/) at UQAM (Université du Québec à Montréal) with the collaboration
 of Environment and Climate Change Canada (ECCC). **CRCM5; Martynov et al. 2013, Separovic et al. 2013**
 
@@ -61,7 +69,7 @@ CRCM5 computations were made on the supercomputers beluga and narval managed by 
 Alliance of Canada](https://alliancecan.ca/en). The operation of this supercomputer received financial support from 
 Innovation, Science and Economic Development Canada and the Ministère de l’Économie et de l’Innovation du Québec.
 
-### Some references for CRCM5
+## Some references for CRCM5
 Asselin, M. Leduc, D. Paquin, K. Winger, A. Di Luca, M. Bukovsky, B. Music, and M. Giguère (2022). On the 
 Intercontinental Transferability of Regional Climate Model Response to Severe Forestation.  MDPI's Climate 
 https://doi.org/10.3390/cli10100138 

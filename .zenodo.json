@@ -59,6 +59,36 @@
       "resource_type": "publication"
     },
     {
+      "identifier": "10.82965/baj8-9930",
+      "relation": "documents",
+      "resource_type": "dataset",
+    },
+    {
+      "identifier": "10.82965/12gt-qv57",
+      "relation": "documents",
+      "resource_type": "dataset",
+    },
+    {
+      "identifier": "10.82965/rksp-xc07",
+      "relation": "documents",
+      "resource_type": "dataset",
+    },
+    {
+      "identifier": "10.82965/5csc-p892",
+      "relation": "documents",
+      "resource_type": "dataset",
+    },
+    {
+      "identifier": "10.82965/wtvp-9417",
+      "relation": "documents",
+      "resource_type": "dataset",
+    },
+    {
+      "identifier": "10.82965/yygy-9989",
+      "relation": "documents",
+      "resource_type": "dataset",
+    },
+    {
       "identifier": "10.22033/ESGF/CMIP6.1317",
       "relation": "isDerivedFrom",
       "resource_type": "dataset"
